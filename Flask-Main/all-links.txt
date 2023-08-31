@@ -1,0 +1,10 @@
+ -GitHub Link : https://github.com/smartinternz02/SBSPS-Challenge-10084-1690619050
+
+ -RedHat openshift Link : https://plug-saiganesh7795-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/
+
+ -Youtube video : https://youtu.be/C0BUonlrraU
+
+ -Cloud object video : https://psg95.s3.jp-tok.cloud-object-storage.appdomain.cloud/ibm-full-video.mp4
+
+ -google drive video : https://drive.google.com/file/d/1feM5g2Qwff7Cb7eRlNiMdHInkU-b87AM/view?usp=drivesdk
+  
