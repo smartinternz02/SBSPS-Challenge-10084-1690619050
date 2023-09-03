@@ -1,0 +1,319 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><!-- features -->
+<script src="https://kit.fontawesome.com/4971d61b8c.js" crossorigin="anonymous"></script>
+
+
+<!-- ou team links -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- our team links end -->
+
+<!-- footer -->
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+</head>
+
+
+<header class="header" >
+    <h1 class="logo"><img src="static/images/logooo.jpg" height="60px" width="200px" alt="" ></h1>
+      <ul class="main-nav">
+        <li><a href="{{ url_for('index1')}}">Ev Stations</a></li>
+        <li><a href="{{ url_for('book')}}">BookASlot</a></li>
+      
+       <li><a href="{{ url_for('search')}}">search ev stations</a></li>
+       <li><a href="{{ url_for('index')}}">Logout<i  style="margin-left: 12px;" class="fa fa-sign-out"></i></a></li>
+
+        
+      </ul>
+  </header> 
+  
+  
+  
+  <div class="bgi">
+    <div class="para" style="margin-left: 30px;margin-right: 10px;">
+      <span >Plug & Power:<br> Transforming EV  Charging</span>
+      <h2 style="color: azure;">Get ready to revolutionize the way you hit the road with EV Charger Station your ultimate guide to electric vehicle charging stations!</h2>
+      <br>
+      <br>
+    <a href="{{ url_for('search')}}" ><button class="button-78" role="button">Find Nearest Charging Stations</button></a>
+
+    </div>
+  <div >
+    <img  class="imger" src="static/images/ev7.jpg"   alt="" style="border-radius: 10px 50px 10px 50px;">
+  </div>
+  </div>
+
+<!-- ------------------------------------------------------services--------------------------------------------------- -->
+
+
+  <section class="services section-bg" id="services">
+    <div class="container">
+      <header class="section-header">
+        <h3 style="margin-bottom: 50px;">Services</h3>
+      </header>
+  
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+           <img src="static/images/ev5.jpg" alt="" height="300px" width="250px" style="border-radius: 10px 100px 10px 10px;">
+  
+            <h4 class="title"><a href="">Charge up with Plug & Power!</a></h4>
+  
+            <p class="description">Need to charge your electric car on the go? Our charging infrastructure is here to keep you powered up wherever you are, hassle-free!</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+          
+            <img src="static/images/ev6.jpg" alt="" height="300px" width="250px" style="border-radius: 90px 90px 10px 10px;">
+  
+            <h4 class="title"><a href="">Easy Pay: Simplifying EV Charging Payments</a></h4>
+  
+            <p class="description">Our payment and billing service makes it super easy to manage your payments and bills, giving you peace of mind and saving you time.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+        
+            <img src="static/images/ev7.jpg" alt="" height="300px" width="250px" style="border-radius: 100px 10px 10px 10px;">
+  
+            <h4 class="title"><a href="">Keep Your EV Charged and Happy</a></h4>
+  
+            <p class="description">Our charging station maintenance service ensures that your electric vehicle charging stations are always in top-notch condition, keeping you charged and ready for the road…</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+          
+            <img src="static/images/ev1.webp" alt="" height="300px" width="250px" style="border-radius: 10px 100px 10px 10px;">
+  
+            <h4 class="title"><a href="">Real-time Information</a></h4>
+  
+            <p class="description">Stations might display real-time information about charging availability, estimated charging time, and charging power levels.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+         
+            <img src="static/images/ev2.webp" alt="" height="300px" width="250px" style="border-radius: 10px 10px 90px 90px;">
+  
+            <h4 class="title"><a href="">Customer Support: </a></h4>
+  
+            <p class="description">Some stations offer customer support services to assist users with any issues they might encounter during charging.
+
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <img src="static/images/ev3.webp" alt="" height="300px" width="250px" style="border-radius: 100px 10px 10px 10px;">
+         
+  
+            <h4 class="title"><a href="">Network Connectivity</a></h4>
+  
+            <p class="description">Many charging stations are connected to networks that allow users to locate, reserve, and pay for charging remotely through apps or websites.</p>
+          </div>
+        </div>
+  
+  
+      </div>
+    </div>
+  </section>
+<!-- -------------------------------------------------------------------------rating-------------------------------------- -->
+
+  <!-- <div class="rating">
+    <img src="img/Screenshot (11).png" alt="" height="60%">
+  </div> -->
+
+
+<!-- ----------------------------------------------------features----------------------------------------------------- -->
+  <section class="service-section py-5">
+    <div class="container">
+      <div class="row justify-content-center py-3">
+        <div class="col-md-8 col-12 text-center">
+          <p class="service-main-heading">Features</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-12">
+          <div class="icon-box">
+            <i class="fa-solid fa-circle-arrow-down service-icon"></i>
+            <p class="service-title"><a href="#">Easy installation: </a></p>
+            <p class="service-para">Our charging stations are designed for easy installation, making it hassle-free for you to set up your electric vehicle charging station at home or on the road.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-12 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="fa-solid fa-charging-station service-icon"></i>
+            <p class="service-title"><a href="#">Fast charging:</a></p>
+            <p class="service-para"> With our advanced technology, you can enjoy fast charging for your electric vehicle, reducing the time it takes to get back on the road.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-12 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="fa-solid fa-shuffle service-icon"></i>
+            <p class="service-title"><a href="#">Compatibility:</a></p>
+            <p class="service-para"> Our charging stations are compatible with all major electric vehicle brands, ensuring that you can charge your vehicle no matter what make or model you have.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-12 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="fa fa-binoculars service-icon"></i>
+            <p class="service-title"><a href="#">Smart features:</a></p>
+            <p class="service-para"> Our charging stations come with smart features such as remote monitoring, scheduling, and automatic billing, making it convenient and efficient for you to manage your charging needs.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-12 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="fa fa-cog service-icon"></i>
+            <p class="service-title"><a href="#">Durable and weatherproof: </a></p>
+            <p class="service-para">Built to withstand the elements, our charging stations are durable and weatherproof, ensuring that they can withstand rain, snow, and extreme temperatures, providing reliable charging year-round.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-12 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="fa-solid fa-bell service-icon"></i>
+            <p class="service-title"><a href="#">Notifications: </a></p>
+            <p class="service-para">Stations may send notifications to users when their charging session is complete or if there are any issues during charging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- **************************************************  our team*********************************************** -->
+  
+<section class="our-webcoderskull padding-lg">
+    <div class="container">
+      <div class="row heading heading-icon">
+          <h2><b>Our Team</b><i class="fa-solid fa-people-group" style="color: rgb(225, 178, 117);"></i></h2>
+      </div>
+      <ul class="row">
+        <li class="col-12 col-md-6 col-lg-3">
+            <div class="cnt-block equal-hight" style="height: 349px;">
+              <figure><img src="static/images/psg.png" class="img-responsive" alt=""></figure>
+              <h3><a href="#">P.saiganesh</a></h3>
+              <p>21471A05I7</p>
+              <ul class="follow-us clearfix">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+        </li>
+        <li class="col-12 col-md-6 col-lg-3">
+            <div class="cnt-block equal-hight" style="height: 349px;">
+              <figure><img src="static/images/manideep.jpg" class="img-responsive" alt=""></figure>
+              <h3><a href="#">T.manideep</a></h3>
+              <p>21471A05K4</p>
+              <ul class="follow-us clearfix">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+        </li>
+        <li class="col-12 col-md-6 col-lg-3">
+            <div class="cnt-block equal-hight" style="height: 349px;">
+              <figure><img src="static/images/ev3.webp" class="img-responsive" alt=""></figure>
+              <h3><a href="#">P.jagadeeswara reddy</a></h3>
+              <p>21471A05J0</p>
+              <ul class="follow-us clearfix">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+         </li>
+        <li class="col-12 col-md-6 col-lg-3">
+            <div class="cnt-block equal-hight" style="height: 349px;">
+              <figure><img src="static/images/srk.jpg" class="img-responsive" alt=""></figure>
+              <h3><a href="#">K.siva rama krishna</a></h3>
+              <p>21471A05G5</p>
+              <ul class="follow-us clearfix">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <img src="static/images/logooo.jpg" height="60px" width="200px" alt="" style="border-radius: 10px 100px 100px 10px;">
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        
+        <a href="#">Blog</a>
+      
+        <a href="#">Pricing</a>
+      
+        <a href="#">About</a>
+        
+        <a href="#">Faq</a>
+        
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name" style="color: aqua;">EV Point © 2023</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker" style="color: aqua;"></i>
+        <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone" style="color: aqua;"></i>
+        <p>+1.555.555.5555</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope" style="color: aqua;"></i>
+        <p><a href="mailto:support@company.com">support@evpoint.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        EV Point, maintaining charging infrastructure for electric vehicles. As the adoption of electric vehicles continues to grow, the demand for charging stations has increased significantly.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook f-icons"></i></a>
+        <a href="#"><i class="fa fa-twitter f-icons"></i></a>
+        <a href="#"><i class="fa fa-linkedin f-icons"></i></a>
+        <a href="#"><i class="fa fa-github f-icons"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+  </html>

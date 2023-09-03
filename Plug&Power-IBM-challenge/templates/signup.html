@@ -1,0 +1,148 @@
+<head>
+    
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}"/>
+<style>
+  .my-form.fv-plugins-bootstrap .fv-help-block {
+      color: #f39c12;
+  }
+  .my-form.fv-plugins-bootstrap .has-danger .fv-plugins-icon {
+      color: #f39c12;
+  }
+  .my-form.fv-plugins-bootstrap .has-success .fv-plugins-icon {
+      color: #18bc9c;
+  }
+</style>
+ 
+
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class="container a-container" id="a-container">
+          <form class="form" id="form"  action="{{ url_for('register1')}}" method="POST">
+            <h2 class="form_title title">Create Account</h2>
+   
+            <div class="form__icons">
+              <img class="form__icon" src="https://webdevtrick.com/wp-content/uploads/facebook.svg" alt="">
+              <img class="form__icon" src="https://webdevtrick.com/wp-content/uploads/twitter.svg">
+              <img class="form__icon" src="https://webdevtrick.com/wp-content/uploads/linkedin.svg"></div>
+              <span class="form__span">or use email for registration</span>
+   
+            <input class="form__input" type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <input class="form__input" type="text" id="email" name="email" placeholder="EX:Example@gmail.com" required>
+            <input class="form__input" type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile Number">
+            <input class="form__input" type="password" id="password" name="password" placeholder="Enter a Password">
+
+            <button class="form__button button " onclick="myFunction()">SIGN UP</button>
+          </form>
+        </div>
+        <div class="container b-container" id="b-container">
+          <form class="form" id="form" method="post" action="{{ url_for('login')}}">
+            <h2 class="form_title title">Sign in to Website</h2>
+   
+            <div class="form__icons" >
+              <img class="form__icon" src="https://webdevtrick.com/wp-content/uploads/facebook.svg" alt="">
+              <img class="form__icon" src="https://webdevtrick.com/wp-content/uploads/twitter.svg">
+              <img class="form__icon" src="https://webdevtrick.com/wp-content/uploads/linkedin.svg"></div>
+              <span class="form__span">or use your email account</span>
+   
+            <input class="form__input" type="text"   id="email" name="email" placeholder="EX:Example@gmail.com">
+            <input class="form__input" type="password" id="password" name="password" placeholder="Password">
+            <h3 style="color: red;margin-top: 12px;">{{ msg}}</h3>
+            <a class="form__link">Forgot your password?</a>
+            <button class="form__button button" >SIGN IN</button>
+            <!-- <input class="form__button button submit" type="submit" value="SIGN IN"> -->
+            
+            
+          </form>
+        </div>
+      
+        <div class="switch" id="switch-cnt">
+          <div class="switch__circle"></div>
+          <div class="switch__circle switch__circle--t"></div>
+          <div class="switch__container" id="switch-c1">
+            <h2 class="switch__title title">Welcome Back !</h2>
+            <p class="switch__description description">To keep connected with us please login with your personal info</p>
+            <button class="switch__button button switch-btn">SIGN IN</button>
+          </div>
+          <div class="switch__container is-hidden" id="switch-c2">
+            <h2 class="switch__title title">Hello Friend !</h2>
+            <p class="switch__description description">Enter your personal details and start journey with us</p>
+            <button class="switch__button button switch-btn">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+      
+   <script>
+function myFunction() {
+  alert("Your Data Saved Successfully,Now you can login");
+}
+// Code By Webdevtrick ( https://webdevtrick.com )
+let switchCtn = document.querySelector("#switch-cnt");
+let switchC1 = document.querySelector("#switch-c1");
+let switchC2 = document.querySelector("#switch-c2");
+let switchCircle = document.querySelectorAll(".switch__circle");
+let switchBtn = document.querySelectorAll(".switch-btn");
+let aContainer = document.querySelector("#a-container");
+let bContainer = document.querySelector("#b-container");
+let allButtons = document.querySelectorAll(".submit");
+ 
+let getButtons = (e) => e.preventDefault()
+ 
+let changeForm = (e) => {
+ 
+    switchCtn.classList.add("is-gx");
+    setTimeout(function(){
+        switchCtn.classList.remove("is-gx");
+    }, 1500)
+ 
+    switchCtn.classList.toggle("is-txr");
+    switchCircle[0].classList.toggle("is-txr");
+    switchCircle[1].classList.toggle("is-txr");
+ 
+    switchC1.classList.toggle("is-hidden");
+    switchC2.classList.toggle("is-hidden");
+    aContainer.classList.toggle("is-txl");
+    bContainer.classList.toggle("is-txl");
+    bContainer.classList.toggle("is-z200");
+}
+ 
+let mainF = (e) => {
+    for (var i = 0; i < allButtons.length; i++)
+        allButtons[i].addEventListener("click", getButtons );
+    for (var i = 0; i < switchBtn.length; i++)
+        switchBtn[i].addEventListener("click", changeForm)
+}
+ 
+window.addEventListener("load", mainF);
+
+   </script>
+   <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "451fb165-e237-4c91-b0f4-f05f828ea75d", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "1507e665-7001-40ba-b682-f9871b04180f", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "3be0987b-51a3-46a2-a8ea-d4132f43f9a6", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "099fa5da-663d-4c5a-860c-70a4e709b91f", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DB2 Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
+    <style>
+      
+        table {
+          
+            width: 100%;
+            border: 1px solid rgb(14, 13, 13);
+            /* box-shadow:5px 5px rgb(130, 130, 130),10px 10px rgb(120, 121, 121),15px 15px rgb(118, 116, 116); */
+            filter:drop-shadow( 16px 16px 10px rgb(92, 90, 90));
+
+
+            .floating { 
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+     
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
+    }
+            
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #0E3B43;
+            color: whitesmoke;
+        
+        }
+        td{
+            background-color: #d4fbee;
+           
+        }
+
+        .table{
+            padding: 50px;
+            background-image: linear-gradient(315deg, #a1c4fd 17%, #77f2f2 48%, #c2e9fb 82%);        }
+    </style>
+</head>
+<body>
+    <header class="header" >
+        <h1 class="logo"><img src="static/images/logooo.jpg" height="60px" width="200px" alt="" ></h1>
+          <ul class="main-nav">
+            <li><a href="{{ url_for('index2')}}">Home</a></li>
+            <li><a href="{{ url_for('book')}}">BookASlot</a></li>
+            <li><a href="{{ url_for('search')}}">search ev stations</a></li>
+            <li><a href="{{ url_for('index')}}">Logout<i  style="margin-left: 12px;" class="fa fa-sign-out"></i></a></li>
+
+          </ul>
+      </header> 
+      
+
+    <div class="table">
+        <h2>If You are intrested in the above Ev stations Then go to book a slot ,otherwise select your customize location</h2>
+      
+    <h1>Available EV Stations Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>LATITUDE</th>
+                <th>LONGTUDE</th>
+                <th>CONNECTOR</th>
+
+                <!-- Add more <th> elements for additional columns -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+                <tr>
+                    <td>{{ result.NAME}}</td>
+                    <td>{{ result.ADDRESS}}</td>
+                    <td>{{ result.LATITUDE}}</td>
+                    <td>{{ result.LONGTUDE}}</td>
+                    <td>{{ result.CONNECTOR}}</td>
+
+                    <!-- Add more <td> elements for additional columns -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
