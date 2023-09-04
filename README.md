@@ -1,13 +1,13 @@
 # SBSPS-Challenge-10084-1690619050
 Plug &amp; Power: Revolutionizing the Road - A complete guide to Electric Vehicle Charging Station
 # Team Members
-P.Jagadeeswara Reddy
-P.Sai Ganesh
-T.Manideep
-K.Siva Rama Krishna
+- P.Jagadeeswara Reddy
+* P.Sai Ganesh
++ T.Manideep
+- K.Siva Rama Krishna
 # Demo
-Demonstration - https://youtu.be/fh0soP4lQ4k.
-Deployed Frontend - https://saiganesh-saiganesh7795-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/.
+- Demonstration - https://youtu.be/fh0soP4lQ4k
+- Deployed Frontend - https://saiganesh-saiganesh7795-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/
 # Screenshots
 
 ![Screenshot (24)](https://github.com/smartinternz02/SBSPS-Challenge-10084-1690619050/assets/128334539/a44b5714-502d-463f-aed5-7b282aff99a2)
